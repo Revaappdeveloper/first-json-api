@@ -1,0 +1,14 @@
+<div class="login-container">
+    <div>
+        <h4>Please enter login details</h4>
+    </div>
+    <div class="username">
+        <input type="text" pInputText placeholder="Enter the name" [(ngModel)]="loginCredentials.username" name="username">
+    </div>
+    <div class="password">
+        <input type="password" pPassword placeholder="Please enter a password" [(ngModel)]="loginCredentials.password" name="password">
+    </div>
+    <div class="login-btn">
+        <button pButton type="button" label="Login" class="ui-button-rounded" (click)="enterData()"></button>
+    </div>
+</div>
